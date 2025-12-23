@@ -1,7 +1,7 @@
 import { Page, Locator } from "@playwright/test";
 
 /**
- * HomePage - 뱅크샐러드 홈페이지 객체
+ * HomePage - TalkCloud 홈페이지 객체
  */
 export class HomePage {
   readonly page: Page;
@@ -16,10 +16,10 @@ export class HomePage {
   }
 
   /**
-   * 뱅크샐러드 홈페이지로 이동
+   * TalkCloud 홈페이지로 이동
    */
   async goto(): Promise<void> {
-    await this.page.goto("https://www.banksalad.com/");
+    await this.page.goto("/");
   }
 
   /**
